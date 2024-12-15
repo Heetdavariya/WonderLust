@@ -1,0 +1,139 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+/* header */
+
+/* Media query for screens 768px wide or smaller */
+@media (max-width: 768px) {
+    .header{
+        height:200px;
+    }
+  } 
+  
+
+.fa-compass{
+    font-size: 2rem;
+    color: #fe424d;
+}
+.nav-link{
+    color: white;
+}
+.header{
+    background-color: #1F2937;
+    height: 4.5rem;
+}
+.nav> li > a:hover{
+    color: #3B82F6;
+}
+
+
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    gap: 1rem;
+    height: 8rem;
+    color: #3B82F6;
+}
+.f-info-socials > a >i{
+    font-size: larger;
+    color: #3B82F6;
+}
+.f-info-socials > a > i{
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+.f-info-links{
+    margin-bottom: 1rem;
+}
+.f-info-links > a{
+    text-decoration: none;
+    margin-bottom: 1rem;
+    color: #3B82F6;
+}
+.f-info-links :hover{
+    text-decoration: underline;
+}
+
+/* home-page */
+
+.card{
+    border: none !important;
+    margin-bottom: 1rem;
+}
+.card-img-top{
+    width: 100% !important;
+    height: 20rem;
+    border-radius: .75rem !important;
+}
+.card-text{
+    padding: 0px !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.listing-links{
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: .2;
+    background-color: #fff;
+}
+.home{
+    background-color: #F3F4F6;
+}
+
+
+/* new-listing-page */
+.newlisting{
+    background-color: white;
+}
+.new-btn{
+    background-color: #00A3E0;
+    border: none;
+}
+.new-btn:hover{
+    background-color: #FF6F61;
+}
+
+/* edit-listing-page */
+.edit-btn{
+    background-color: #00A3E0;
+    border: none;
+}
+.edit-btn:hover{
+    background-color: #FF6F61;
+}
+/* details-page */
+.details-img{
+    width: 100% !important;
+    height: 60vh;
+}
+.details-btn{
+    display: flex;
+    gap: 1rem;
+}
+.del-btn{
+    background-color: rgb(212, 34, 34);
+    border: none;
+}
+
+/* aboutus */
+.aboutus{
+    background-color: #e0f7f9;
+}
+

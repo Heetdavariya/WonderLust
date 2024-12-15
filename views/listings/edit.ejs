@@ -1,0 +1,45 @@
+<% layout('layouts/boilerplate') %>
+
+    <body>
+        <div class="row">
+            <div class="col-7 offset-2">
+                <h2>Edit Your Listing</h2>
+                <form action="/listings/update/<%=listing._id%>?_method=patch" method="post">
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="title">Title : </label>
+                        <input class="form-control" value="<%=listing.title%>" type="text" id="title" name="title">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="description">Description : </label><br>
+                        <textarea value="<%=listing.description%>" rows="5" cols="35" name="description" type="text"
+                            id="description"></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="image">Image URL : </label>
+                        <input class="form-control" value="<%=listing.image%>" name="image" type="text" id="image">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group mb-3">
+                                <label class="form-label" for="price">Price : </label>
+                                <input class="form-control" value="<%=listing.price%>" name="price" type="text" id="price">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group mb-3">
+                                <label class="form-label" for="country">Country : </label>
+                                <input class="form-control" value="<%=listing.country%>" name="country" type="text"
+                                    id="country">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="location">Location : </label>
+                        <input class="form-control" value="<%=listing.location%>" name="location" type="text"
+                            id="location">
+                    </div>
+                    <button class="btn btn-dark my-2 edit-btn">Edit</button>
+                </form>
+            </div>
+        </div>
+    </body>

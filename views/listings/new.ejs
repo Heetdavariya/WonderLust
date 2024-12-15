@@ -1,0 +1,49 @@
+<% layout('/layouts/boilerplate') %>
+
+    <body class="newlisting">
+        <div class="row">
+            <div class="col-7 offset-2">
+                <h2>Create New Listing</h2>
+                <form action="/listings" method="post">
+
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="title">Title : </label>
+                        <input class="form-control" type="text" id="title" name="title">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="description">description : </label><br>
+                        <textarea rows="5" cols="45" name="description" type="text"
+                            placeholder="Enter description about new listing" id="description"></textarea>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="image">Image URL : </label>
+                        <input class="form-control" name="image" type="text" id="image">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group mb-3">
+                                <label class="form-label" for="price">Price : </label>
+                                <input class="form-control" name="price" type="text" id="price">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group mb-3">
+                                <label class="form-label" for="country">Country : </label>
+                                <input class="form-control" name="country" type="text" id="country">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="location">Location : </label>
+                        <input class="form-control" name="location" type="text" id="location">
+                    </div>
+
+                    <button class="btn btn-dark my-2 new-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
